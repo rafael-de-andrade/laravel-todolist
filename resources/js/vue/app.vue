@@ -1,23 +1,7 @@
 <template>
     <div style="margin-left: 150px;" class="container">
         <div class="row">
-            <div class="col-md-6">
-                <!-- <table class="table">
-                    <thead class="thead-light">
-                    <tr>
-                        <th>#</th>
-                        <th style="width: 150px">Lista</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="lista in listas" :key="lista.id">
-                            <td>{{lista.id}}</td>
-                            <td><a @click="getListaSelecionada(lista.id)">{{lista.name}}</a></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table> -->
+            <div class="col-md-12">
                 <div class="todoListContainer">
                     <div class="heading">
                         <h2 id="title">Listas</h2>
@@ -29,7 +13,9 @@
                     />
                 </div>
             </div>
-            <div class="col-md-6">
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <div class="todoListContainer">
                     <div class="heading">
                         <h2 id="title">{{ lista_selecionada.name }}</h2>
